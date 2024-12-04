@@ -2,3 +2,21 @@
     width: auto;
     max-height: 280px;
 }
+
+.card-aduan {
+    height: 500px; /* Tinggi card tetap */
+    overflow: hidden; /* Untuk menghindari konten meluap */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-body-aduan {
+    height: 100px; /* Tinggi tetap untuk paragraf */
+    overflow: hidden; /* Menghilangkan teks yang meluap */
+    text-overflow: ellipsis; /* Menambahkan "..." jika teks terpotong */
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* Maksimal 6 baris (disesuaikan dengan ukuran font dan tinggi elemen) */
+    -webkit-box-orient: vertical;
+    line-height: 1.5; /* Mengatur spasi antarbaris */
+}
